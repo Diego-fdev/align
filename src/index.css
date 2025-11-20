@@ -3,14 +3,16 @@
 
 :root {
   --color-main-white: #f6f6f6;
+  --color-secondary-white: #c2c2c2;
   --color-main-black: #2d2d2d;
   --color-secondary-black: #3a3a3a;
   --color-main-color: #ecf86e;
-  --color-secondary-color: #97a2aa;
+  --color-secondary-color: #7b828b;
 }
 
 @theme {
   --color-main-white: #f6f6f6;
+  --color-secondary-white: #c2c2c2;
   --color-main-black: #2d2d2d;
   --color-secondary-black: #3a3a3a;
   --color-main-color: #ecf86e;
