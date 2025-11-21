@@ -1,5 +1,6 @@
 import Hero from "./components/Hero";
 import SectionDescripcion from "./components/index/SectionDescripcion";
+import SectionServicios from "./components/index/sectionServicios/SectionServicios";
 import Nav from "./components/Nav";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Nav />
       <Hero />
       <SectionDescripcion />
+      <SectionServicios />
     </>
   );
 }
