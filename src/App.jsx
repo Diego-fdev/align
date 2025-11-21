@@ -2,6 +2,7 @@ import Hero from "./components/Hero";
 import SectionDescripcion from "./components/index/SectionDescripcion";
 import SectionServicios from "./components/index/sectionServicios/SectionServicios";
 import Nav from "./components/Nav";
+import SectionEquipo from "./components/SectionEquipo";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <SectionDescripcion />
       <SectionServicios />
+      <SectionEquipo />
     </>
   );
 }
