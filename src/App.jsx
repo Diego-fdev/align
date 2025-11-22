@@ -4,6 +4,7 @@ import SectionServicios from "./components/index/sectionServicios/SectionServici
 import Nav from "./components/Nav";
 import SectionEquipo from "./components/SectionEquipo";
 import SectionOferta from "./components/SectionOferta";
+import SectionPlanes from "./components/SectionPlanes";
 import SectionReviews from "./components/SectionReviews";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <SectionEquipo />
       <SectionReviews />
       <SectionOferta />
+      <SectionPlanes />
     </>
   );
 }
