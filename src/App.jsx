@@ -3,6 +3,7 @@ import SectionDescripcion from "./components/index/SectionDescripcion";
 import SectionServicios from "./components/index/sectionServicios/SectionServicios";
 import Nav from "./components/Nav";
 import SectionEquipo from "./components/SectionEquipo";
+import SectionReviews from "./components/SectionReviews";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <SectionDescripcion />
       <SectionServicios />
       <SectionEquipo />
+      <SectionReviews />
     </>
   );
 }
