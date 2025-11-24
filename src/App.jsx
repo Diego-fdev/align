@@ -2,6 +2,7 @@ import Hero from "./components/Hero";
 import SectionDescripcion from "./components/index/SectionDescripcion";
 import SectionServicios from "./components/index/sectionServicios/SectionServicios";
 import Nav from "./components/Nav";
+import SectionContacto from "./components/SectionContacto";
 import SectionEquipo from "./components/SectionEquipo";
 import SectionOferta from "./components/SectionOferta";
 import SectionPlanes from "./components/SectionPlanes";
@@ -18,6 +19,7 @@ function App() {
       <SectionReviews />
       <SectionOferta />
       <SectionPlanes />
+      <SectionContacto />
     </>
   );
 }
