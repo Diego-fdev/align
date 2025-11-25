@@ -6,6 +6,7 @@ import SectionContacto from "./components/SectionContacto";
 import SectionEquipo from "./components/SectionEquipo";
 import SectionOferta from "./components/SectionOferta";
 import SectionPlanes from "./components/SectionPlanes";
+import SectionPreguntas from "./components/index/sectionPreguntas/SectionPreguntas";
 import SectionReviews from "./components/SectionReviews";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <SectionOferta />
       <SectionPlanes />
       <SectionContacto />
+      <SectionPreguntas />
     </>
   );
 }
