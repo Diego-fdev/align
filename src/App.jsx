@@ -8,6 +8,7 @@ import SectionOferta from "./components/SectionOferta";
 import SectionPlanes from "./components/SectionPlanes";
 import SectionPreguntas from "./components/index/sectionPreguntas/SectionPreguntas";
 import SectionReviews from "./components/SectionReviews";
+import MainFooter from "./components/layout/MainFooter";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <SectionPlanes />
       <SectionContacto />
       <SectionPreguntas />
+      <MainFooter />
     </>
   );
 }
