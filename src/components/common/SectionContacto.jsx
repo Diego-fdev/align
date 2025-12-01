@@ -1,14 +1,25 @@
 import imagenContacto from "../../assets/contacto.webp";
 import CustomMainSection from "../CustomMainSection";
 import InputForm from "../inputs/InputForm";
-export default function SectionContacto() {
+import MainIcon from "../../icons/MainIcon";
+
+export default function SectionContacto({ customStyles }) {
   return (
-    <CustomMainSection customStyles="grid gap-8 md:grid-cols-2 md:gap-4">
+    <CustomMainSection
+      customStyles={`grid gap-8 md:grid-cols-2 md:gap-4 ${customStyles}`}
+    >
       <div className="imagenContacto rounded-3xl overflow-hidden">
         <img src={imagenContacto} alt="" />
       </div>
-      <div className="contacto-main-content bg-main-color p-6 rounded-3xl flex flex-col gap-8 xl:p-8 xl:pt-16 xl:gap-12">
-        <header className="flex flex-col gap-4">
+      <div className="contacto-main-content bg-main-color p-6 rounded-3xl flex flex-col gap-8 xl:p-8 xl:pt-16 xl:gap-12 relative overflow-hidden">
+        <div className="imagen absolute -top-14 -left-14 2xl:-top-30 2xl:-left-30">
+          <MainIcon
+            customSize={
+              "w-[150px] h-[150px] lg:w-[200px] lg:h-[200px] 2xl:w-[300px] 2xl:h-[300px]"
+            }
+          />
+        </div>
+        <header className="flex flex-col gap-4 relative">
           <h3 className="text-4xl sm:text-[42px] tracking-tight xl:text-5xl 2xl:text-[54px]">
             Ponte en contacto.
           </h3>
