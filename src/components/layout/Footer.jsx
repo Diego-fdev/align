@@ -4,7 +4,7 @@ import Instagram from "../../icons/Instagram";
 import Messenger from "../../icons/Messenger";
 import X from "../../icons/X";
 
-export default function MainFooter() {
+export default function Footer() {
   return (
     <footer className="bg-main-black">
       <div className="content-footer w-full max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 2xl:px-0 pt-10 lg:pt-14 2xl:pt-20 grid sm:grid-cols-2 lg:grid-cols-[150px_1fr_1fr] xl:grid-cols-[250px_1.5fr_1fr] 2xl:grid-cols-[1fr_1.5fr_1fr] gap-8 lg:grid-rows-">
