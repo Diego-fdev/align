@@ -1,5 +1,5 @@
-import CustomMainSection from "./CustomMainSection";
-import cardOfertaImage from "../assets/CardOfertaImage.webp";
+import CustomMainSection from "../../../components/CustomMainSection";
+import cardOfertaImage from "../../../assets/CardOfertaImage.webp";
 export default function SectionOferta() {
   return (
     <CustomMainSection>

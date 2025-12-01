@@ -1,5 +1,5 @@
-import CardPlan from "./cards/CardPlan";
-import CustomMainSection from "./CustomMainSection";
+import CardPlan from "../../../components/cards/CardPlan";
+import CustomMainSection from "../../../components/CustomMainSection";
 
 const listadoPlanes = [
   {

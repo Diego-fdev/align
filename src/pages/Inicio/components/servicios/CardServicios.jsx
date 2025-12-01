@@ -1,4 +1,4 @@
-import MainIcon from "../../../icons/MainIcon";
+import MainIcon from "../../../../icons/MainIcon";
 
 export default function CardServicios({ id, type, icon, title, text }) {
   return (

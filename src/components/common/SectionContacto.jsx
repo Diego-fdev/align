@@ -1,6 +1,6 @@
-import imagenContacto from "../assets/contacto.webp";
-import CustomMainSection from "./CustomMainSection";
-import InputForm from "./inputs/inputForm";
+import imagenContacto from "../../assets/contacto.webp";
+import CustomMainSection from "../CustomMainSection";
+import InputForm from "../inputs/InputForm";
 export default function SectionContacto() {
   return (
     <CustomMainSection customStyles="grid gap-8 md:grid-cols-2 md:gap-4">

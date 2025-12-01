@@ -1,10 +1,10 @@
-import CustomMainSection from "./CustomMainSection";
+import CustomMainSection from "../../../components/CustomMainSection";
 import { Swiper, SwiperSlide } from "swiper/react";
-import MainCard from "./cards/MainCard";
+import MainCard from "../../../components/cards/MainCard";
 import { MoveRight } from "lucide-react";
-import imagenMiembroEquipoUno from "../assets/equipo/miembro-1.webp";
-import imagenMiembroEquipoDos from "../assets/equipo/miembro-2.webp";
-import imagenMiembroEquipoTres from "../assets/equipo/miembro-3.webp";
+import imagenMiembroEquipoUno from "../../../assets/equipo/miembro-1.webp";
+import imagenMiembroEquipoDos from "../../../assets/equipo/miembro-2.webp";
+import imagenMiembroEquipoTres from "../../../assets/equipo/miembro-3.webp";
 
 // Import Swiper styles
 import "swiper/css";
