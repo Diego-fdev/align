@@ -1,4 +1,4 @@
-import CustomMainSection from "../../CustomMainSection";
+import CustomMainSection from "../../../../components/CustomMainSection";
 import { HeartPlus, Dumbbell, Brain } from "lucide-react";
 import CardServicios from "./CardServicios";
 

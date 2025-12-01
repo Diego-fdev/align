@@ -1,8 +1,8 @@
-import CustomMainSection from "./CustomMainSection";
-import imagenUserReviewUno from "../assets/reviews/user-review-1.webp";
-import imagenUserReviewDos from "../assets/reviews/user-review-2.webp";
-import imagenUserReviewTres from "../assets/reviews/user-review-3.webp";
-import imagenUserReviewCuatro from "../assets/reviews/user-review-4.webp";
+import CustomMainSection from "../../../components/CustomMainSection";
+import imagenUserReviewUno from "../../../assets/reviews/user-review-1.webp";
+import imagenUserReviewDos from "../../../assets/reviews/user-review-2.webp";
+import imagenUserReviewTres from "../../../assets/reviews/user-review-3.webp";
+import imagenUserReviewCuatro from "../../../assets/reviews/user-review-4.webp";
 
 const infoReviews = [
   {

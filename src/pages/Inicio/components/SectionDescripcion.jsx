@@ -1,4 +1,4 @@
-import CustomMainSection from "../CustomMainSection";
+import CustomMainSection from "../../../components/CustomMainSection";
 
 export default function SectionDescripcion() {
   return (
