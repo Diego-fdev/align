@@ -3,6 +3,7 @@ import Inicio from "../pages/Inicio/Inicio";
 import MainLayout from "../layouts/MainLayout";
 import Tutoras from "../pages/tutoras/Tutoras";
 import Contacto from "../pages/contacto/Contacto";
+import Planes from "../pages/planes/Planes";
 
 export default function AppRouter() {
   return (
@@ -12,6 +13,7 @@ export default function AppRouter() {
           <Route path="/" element={<Inicio />} />
           <Route path="/tutoras" element={<Tutoras />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/planes" element={<Planes />} />
         </Route>
       </Routes>
     </BrowserRouter>
