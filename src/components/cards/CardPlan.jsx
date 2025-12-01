@@ -3,6 +3,7 @@ export default function CardPlan({
   costo,
   listadoBeneficios,
   customCardStyles,
+  isPlanesPage,
 }) {
   return (
     <div
@@ -26,8 +27,12 @@ export default function CardPlan({
             {nombrePlan}
           </span>
           <span
-            className={`text-5xl lg:text-[54px] xl:text-6xl 2xl:text-[67px] ${
+            className={`text-5xl  ${
               nombrePlan === "plan basico" && "text-main-white"
+            } ${
+              isPlanesPage
+                ? "md:text-[54px] lg:text-6xl xl:text-7xl 2xl:text-[80px]"
+                : "lg:text-[54px] xl:text-6xl 2xl:text-[67px]"
             }`}
           >
             ${costo}

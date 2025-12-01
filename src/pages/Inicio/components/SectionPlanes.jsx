@@ -38,13 +38,20 @@ const listadoPlanes = [
   },
 ];
 
-export default function SectionPlanes() {
+export default function SectionPlanes({ customStyles, isMainSection }) {
   return (
-    <CustomMainSection customStyles="flex flex-col gap-12">
+    <CustomMainSection customStyles={`flex flex-col gap-12 ${customStyles}`}>
       <header className="w-full flex flex-col items-center gap-4">
-        <h2 className="text-4xl tracking-tight text-center max-w-[400px] sm:max-w-[500px] mx-auto sm:text-5xl md:text-[54px] md:max-w-[600px] xl:max-w-[700px] xl:text-6xl 2xl:text-[67px]">
-          Clases de entrenamiento comunitaria
-        </h2>
+        {isMainSection ? (
+          <h1 className="text-4xl tracking-tight text-center max-w-[400px] sm:max-w-[500px] mx-auto sm:text-5xl md:text-[54px] md:max-w-[600px] xl:max-w-[700px] xl:text-6xl 2xl:text-[67px]">
+            Clases comunitarias de entrenamiento
+          </h1>
+        ) : (
+          <h2 className="text-4xl tracking-tight text-center max-w-[400px] sm:max-w-[500px] mx-auto sm:text-5xl md:text-[54px] md:max-w-[600px] xl:max-w-[700px] xl:text-6xl 2xl:text-[67px]">
+            Clases comunitarias de entrenamiento
+          </h2>
+        )}
+
         <p className="text-sm tracking-tight text-center max-w-[500px] xl:max-w-[600px] xl:text-base 2xl:text-lg 2xl:max-w-[650px]">
           Si buscas complementar tu rutina de ejercicios con entrenamiento en
           grupos pequeños o simplemente quieres unirte a algunas clases al mes,
@@ -55,6 +62,7 @@ export default function SectionPlanes() {
         {listadoPlanes.map((plan) => (
           <CardPlan
             key={plan.id}
+            isPlanesPage={isMainSection}
             nombrePlan={plan.nombre}
             costo={plan.costo}
             listadoBeneficios={plan.beneficios}
