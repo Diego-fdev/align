@@ -8,6 +8,7 @@ export default function Planes() {
         isMainSection={true}
         customStyles="pt-32 lg:pt-40 xl:pt-52"
       />
+      <SectionEleccion />
     </>
   );
 }
