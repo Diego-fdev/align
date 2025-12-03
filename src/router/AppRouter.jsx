@@ -4,6 +4,7 @@ import MainLayout from "../layouts/MainLayout";
 import Tutoras from "../pages/tutoras/Tutoras";
 import Contacto from "../pages/contacto/Contacto";
 import Planes from "../pages/planes/Planes";
+import Blog from "../pages/blog/Blog";
 
 export default function AppRouter() {
   return (
@@ -14,6 +15,7 @@ export default function AppRouter() {
           <Route path="/tutoras" element={<Tutoras />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/planes" element={<Planes />} />
+          <Route path="/blog" element={<Blog />} />
         </Route>
       </Routes>
     </BrowserRouter>
