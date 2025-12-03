@@ -1,4 +1,6 @@
+import CustomMainSection from "../../components/CustomMainSection";
 import SectionPlanes from "../Inicio/components/SectionPlanes";
+import CardJoin from "./components/CardJoin";
 import SectionEleccion from "./components/SectionEleccion";
 
 export default function Planes() {
@@ -9,6 +11,9 @@ export default function Planes() {
         customStyles="pt-32 lg:pt-40 xl:pt-52"
       />
       <SectionEleccion />
+      <CustomMainSection>
+        <CardJoin />
+      </CustomMainSection>
     </>
   );
 }
