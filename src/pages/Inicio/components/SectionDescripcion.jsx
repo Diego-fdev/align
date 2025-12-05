@@ -1,10 +1,13 @@
 import CustomMainSection from "../../../components/CustomMainSection";
+import instructoraUno from "../../../assets/instructora-1.webp";
+import instructoraDos from "../../../assets/instructora-2.webp";
+import instructoraTres from "../../../assets/instructora-3.webp";
 
 export default function SectionDescripcion() {
   return (
     <CustomMainSection customStyles="grid gap-y-12 md:grid-rows-[repeat(3,auto)] lg:grid-rows-[auto_200px_auto] 2xl:grid-rows-[auto_250px_auto] lg:grid-cols-[repeat(3,1fr)] lg:gap-y-16">
       <div className="texto lg:col-span-2">
-        <p className="text-4xl sm:text-5xl tracking-tight sm:max-w-[720px] mx-auto lg:mx-0 text-center leading-12 lg:text-left lg:text-[42px] lg:max-w-[650px] lg:pt-12 xl:text-5xl xl:max-w-[700px] 2xl:text-6xl 2xl:max-w-[850px] 2xl:leading-16">
+        <p className="text-4xl sm:text-5xl tracking-tight sm:max-w-[720px] mx-auto lg:mx-0 text-center leading-12 lg:text-left lg:text-[42px] lg:max-w-[650px] lg:pt-12 xl:text-5xl xl:max-w-[700px] 2xl:text-6xl 2xl:max-w-[850px] 2xl:leading-16 text-main-text">
           Descubre el poder transformador del yoga, tanto si eres principiante
           como si tienes experiencia.
         </p>
@@ -38,14 +41,14 @@ export default function SectionDescripcion() {
           </span>
         </li>
       </ul>
-      <div className="imagen-persona-1 w-full max-w-[400px] sm:max-w-fit mx-auto rounded-xl overflow-hidden md:h-[50vw] lg:row-span-2 lg:h-[40vw] xl:h-[35vw] 2xl:h-[500px] lg:justify-self-end lg:mx-0">
-        <img src="/src/assets/instructora-1.webp" alt="" />
+      <div className="imagen-persona-1 w-full max-w-[300px] mx-auto rounded-xl overflow-hidden lg:row-span-2 lg:h-[40vw] xl:h-[35vw] 2xl:h-[500px] lg:justify-self-end lg:mx-0">
+        <img src={instructoraUno} alt="" />
       </div>
       <div className="imagen-persona-2 hidden lg:inline-block w-fit rounded-xl overflow-hidden h-[200px] 2xl:h-[250px] col-start-2 justify-self-center">
-        <img src="/src/assets/instructora-2.webp" alt="" />
+        <img src={instructoraDos} alt="" />
       </div>
       <div className="imagen-persona-3 hidden lg:inline-block w-fit rounded-xl overflow-hidden h-[40vw] xl:h-[35vw] 2xl:h-[500px] row-span-2 col-start-1 row-start-2 mt-20 justify-self-start">
-        <img src="/src/assets/instructora-3.webp" alt="" />
+        <img src={instructoraTres} alt="" />
       </div>
     </CustomMainSection>
   );
