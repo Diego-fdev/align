@@ -12,13 +12,13 @@ export default function Nav() {
         <div
           ref={ref}
           onClick={handleToggle}
-          className={`main-menu absolute top-0 left-0 flex flex-col h-11 px-4 bg-secondary-white/40 rounded-3xl transition-[width,height] duration-400 backdrop-blur-sm ${
+          className={`hover:shadow-lg hover:shadow-secondary-black/20  main-menu absolute top-0 left-0 flex flex-col h-11 px-4 bg-secondary-white/40 rounded-3xl transition-[width,height,box-shadow] duration-400 backdrop-blur-sm ${
             toggle
               ? "w-[170px] lg:w-[200px] h-58 lg:h-64 delay-0"
               : "w-[100px] h-11"
           }`}
         >
-          <div className="btn-menu flex justify-between items-center h-11 w-full">
+          <div className="cursor-pointer btn-menu flex justify-between items-center h-11 w-full">
             <span className="capitalize tracking-tight text-sm lg:text-base text-main-white">
               menu
             </span>
@@ -28,7 +28,11 @@ export default function Nav() {
             </div>
           </div>
 
-          <ul className="absolute top-11 lg:top-14 left-0 px-4 flex flex-col gap-3 lg:gap-4 w-full">
+          <ul
+            className={`absolute top-11 lg:top-14 left-0 px-4 flex flex-col gap-3 lg:gap-4 w-full ${
+              toggle ? "pointer-events-auto" : "pointer-events-none"
+            }`}
+          >
             {navigationLinks.map((link) => (
               <li
                 key={link.id}
