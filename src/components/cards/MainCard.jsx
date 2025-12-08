@@ -5,9 +5,12 @@ export default function MainCard({
   title,
   text,
   icon,
+  customButtonText,
   customButtonStyles,
   customTitleStyles,
   customCardStyles,
+  toggleButton,
+  customTextStyles,
 }) {
   return (
     <div
@@ -38,7 +41,11 @@ export default function MainCard({
         </div>
       )}
 
-      <div className="card-text flex flex-col gap-2 relative">
+      <div
+        className={`card-text flex flex-col gap-2 relative ${
+          toggleButton && "h-full justify-between flex-1"
+        }`}
+      >
         <span
           className={`capitalize text-[22px] xl:text-2xl 2xl:text-[28px] tracking-tight   ${
             type === "main" ? "text-main-white" : "text-main-black"
@@ -53,26 +60,27 @@ export default function MainCard({
             type === "main"
               ? "text-secondary-text-white"
               : "text-secondary-text"
-          } ${type === "team" && "2xl:text-lg"}`}
+          } ${type === "team" && "2xl:text-lg"} ${customTextStyles}`}
         >
           {text}
         </p>
       </div>
-
-      <a
-        href=""
-        className={`w-full py-3 rounded-full sm:w-fit mt-auto sm:px-8 flex items-center justify-center relative ${
-          type === "main" ? "bg-main-white " : "bg-main-black"
-        } ${customButtonStyles}`}
-      >
-        <span
-          className={`capitalize text-sm xl:text-base 2xl:text-lg font-medium ${
-            type === "main" ? "text-main-black" : "text-white"
-          }`}
+      {!toggleButton && (
+        <a
+          href=""
+          className={`w-full py-3 rounded-full sm:w-fit mt-auto sm:px-8 flex items-center justify-center relative ${
+            type === "main" ? "bg-main-white " : "bg-main-black"
+          } ${customButtonStyles}`}
         >
-          saber mas
-        </span>
-      </a>
+          <span
+            className={`capitalize text-sm xl:text-base 2xl:text-lg font-medium ${
+              type === "main" ? "text-main-black" : "text-white"
+            }`}
+          >
+            {customButtonText || "saber mas"}
+          </span>
+        </a>
+      )}
     </div>
   );
 }

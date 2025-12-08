@@ -1,43 +1,8 @@
 import MainCard from "../../../components/cards/MainCard";
 import CustomMainSection from "../../../components/CustomMainSection";
-import imagenMiembroEquipoUno from "../../../assets/equipo/miembro-1.webp";
-import imagenMiembroEquipoDos from "../../../assets/equipo/miembro-2.webp";
-import imagenMiembroEquipoTres from "../../../assets/equipo/miembro-3.webp";
 import { MoveRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-const infoEquipo = [
-  {
-    id: 1,
-    nombre: "claire ford",
-    imagenSrc: imagenMiembroEquipoUno,
-  },
-  {
-    id: 2,
-    nombre: "alicia regis",
-    imagenSrc: imagenMiembroEquipoDos,
-  },
-  {
-    id: 3,
-    nombre: "lena parker",
-    imagenSrc: imagenMiembroEquipoTres,
-  },
-  {
-    id: 4,
-    nombre: "claire ford",
-    imagenSrc: imagenMiembroEquipoUno,
-  },
-  {
-    id: 5,
-    nombre: "alicia regis",
-    imagenSrc: imagenMiembroEquipoDos,
-  },
-  {
-    id: 6,
-    nombre: "lena parker",
-    imagenSrc: imagenMiembroEquipoTres,
-  },
-];
+import { infoTutoras } from "../../../constants/tutoras";
 
 export default function SectionTutoras() {
   return (
@@ -61,7 +26,7 @@ export default function SectionTutoras() {
             customTitleStyles="text-3xl! md:text-2xl!"
             customCardStyles="md:mb-12"
           />
-          {infoEquipo.slice(0, 2).map((miembro) => (
+          {infoTutoras.slice(0, 2).map((miembro) => (
             <div
               key={miembro.id}
               className="miembro-equipo flex-col gap-2 lg:flex-1 lg:min-w-[218px] hidden md:flex"
@@ -107,7 +72,7 @@ export default function SectionTutoras() {
             loop
             className="w-full md:hidden!"
           >
-            {infoEquipo.map((miembro) => (
+            {infoTutoras.map((miembro) => (
               <SwiperSlide
                 key={miembro.id}
                 className={
@@ -162,7 +127,7 @@ export default function SectionTutoras() {
             loop
             className="w-full hidden! md:flex!"
           >
-            {infoEquipo.slice(2, 6).map((miembro) => (
+            {infoTutoras.slice(2, 6).map((miembro) => (
               <SwiperSlide key={miembro.id}>
                 <div className="imagen miembro-equipo overflow-hidden rounded-3xl w-fit h-fit sm:max-w-full lg:h-full">
                   <img src={miembro.imagenSrc} alt="" />

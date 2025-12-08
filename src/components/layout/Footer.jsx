@@ -1,4 +1,6 @@
+import { Link } from "react-router";
 import imagenLogo from "../../assets/logo.webp";
+import { navigationLinks } from "../../constants/navigation";
 import Facebook from "../../icons/Facebook";
 import Instagram from "../../icons/Instagram";
 import Messenger from "../../icons/Messenger";
@@ -55,46 +57,16 @@ export default function Footer() {
         </ul>
         <nav className="nav-footer lg:col-start-3 ">
           <ul className="flex flex-col gap-2 sm:flex-row sm:flex-wrap md:flex-col">
-            <li>
-              <a
-                href=""
-                className="capitalize text-secondary-text-white py-2 sm:px-2 inline-block text-sm tracking-tight xl:text-base 2xl:text-lg"
-              >
-                inicio
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                className="capitalize text-secondary-text-white py-2 sm:px-2 inline-block text-sm tracking-tight xl:text-base 2xl:text-lg"
-              >
-                tutores
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                className="capitalize text-secondary-text-white py-2 sm:px-2 inline-block text-sm tracking-tight xl:text-base 2xl:text-lg"
-              >
-                servicios
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                className="capitalize text-secondary-text-white py-2 sm:px-2 inline-block text-sm tracking-tight xl:text-base 2xl:text-lg"
-              >
-                blog
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                className="capitalize text-secondary-text-white py-2 sm:px-2 inline-block text-sm tracking-tight xl:text-base 2xl:text-lg"
-              >
-                planes
-              </a>
-            </li>
+            {navigationLinks.map((link) => (
+              <li key={link.id}>
+                <Link
+                  to={link.path}
+                  className="capitalize text-secondary-text-white py-2 sm:px-2 inline-block text-sm tracking-tight xl:text-base 2xl:text-lg"
+                >
+                  {link.nombre}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
         <span className="copy text-secondary-text-white uppercase text-xs mx-auto pb-2 md:col-span-2 lg:col-span-3">

@@ -1,5 +1,3 @@
-import SectionPreguntas from "../../components/common/preguntas/SectionPreguntas";
-import SectionContacto from "../../components/common/SectionContacto";
 import CustomMainSection from "../../components/CustomMainSection";
 import SectionPosts from "./components/posts/SectionPosts";
 
@@ -18,8 +16,6 @@ export default function Blog() {
         </p>
       </header>
       <SectionPosts />
-      <SectionContacto />
-      <SectionPreguntas />
     </CustomMainSection>
   );
 }

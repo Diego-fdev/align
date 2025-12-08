@@ -1,6 +1,6 @@
 import Hero from "./components/Hero";
 import SectionDescripcion from "./components/SectionDescripcion";
-import SectionServicios from "./components/servicios/SectionServicios";
+import SectionServicios from "./components/SectionServicios";
 import SectionEquipo from "./components/SectionEquipo";
 import SectionReviews from "./components/SectionReviews";
 import SectionOferta from "./components/SectionOferta";
