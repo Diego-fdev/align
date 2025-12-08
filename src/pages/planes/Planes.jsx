@@ -1,5 +1,3 @@
-import SectionPreguntas from "../../components/common/preguntas/SectionPreguntas";
-import SectionContacto from "../../components/common/SectionContacto";
 import CustomMainSection from "../../components/CustomMainSection";
 import SectionPlanes from "../Inicio/components/SectionPlanes";
 import CardJoin from "./components/CardJoin";
@@ -16,8 +14,6 @@ export default function Planes() {
       <CustomMainSection>
         <CardJoin />
       </CustomMainSection>
-      <SectionContacto />
-      <SectionPreguntas />
     </>
   );
 }

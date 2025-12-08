@@ -10,8 +10,6 @@ export default function Servicios() {
       <SectionMainServices />
       <SectionDescripcion />
       <SectionDiscount />
-      <SectionContacto />
-      <SectionPreguntas />
     </>
   );
 }
